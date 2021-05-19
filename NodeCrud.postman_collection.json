@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "1a4c292b-d873-4704-980b-c86848b943aa",
+		"name": "NodeCrud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User Registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "gdfgdfgdfgdgfd@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "testing123sds",
+							"type": "text"
+						},
+						{
+							"key": "confirm_password",
+							"value": "testing123sds",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "afdfds",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "adsdfsdf",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/user/add",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5vZGUxQGdtYWlsLmNvbSIsImlkIjoiNjAyY2Y2YWQxM2IzYjMzZGMwNDllMGU3IiwiaWF0IjoxNjEzNjQ5NzA1LCJleHAiOjE2MTQ5NDU3MDV9.GiQTxGnrjHWEBE7n4zZbGw5D3au42741HejKInWTXlo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "nodepassword@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "testing123sds",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/user/userlogin",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"userlogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5vZGUxQGdtYWlsLmNvbSIsImlkIjoiNjAyY2Y2YWQxM2IzYjMzZGMwNDllMGU3IiwiaWF0IjoxNjEzNjQ5NzA1LCJleHAiOjE2MTQ5NDU3MDV9.GiQTxGnrjHWEBE7n4zZbGw5D3au42741HejKInWTXlo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/users",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
